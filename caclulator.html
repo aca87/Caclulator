@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator</title>
+ </head>   
+<body>
+<script>
+        var prvibroj = prompt("Unesite prvi broj: ");
+        var drugibroj = prompt("Unesite drugi broj: ");
+
+        var operacija = prompt("Unesite aritmetičku operaciju koju želite da izvršite, koristeći sledeće znakove : (+ za Sabiranje), ( - za Oduzimanje), ( * za Mnozenje), ( / za Djeljenje): ");
+        switch (operacija) {
+            case "+":
+            var operacija = parseInt(prvibroj) + parseInt(drugibroj);
+            break;
+            case "-":
+            var operacija = parseInt(prvibroj) - parseInt(drugibroj);
+            break;
+            case "*":
+            var operacija = parseInt(prvibroj) * parseInt(drugibroj);
+            break;
+            case "/":
+            var operacija = parseInt(prvibroj) / parseInt(drugibroj);
+            break;
+            default:
+            alert("Nepoznata aritmetička operacija! Provjerite da li ste koristili jedan od sledećih znakova ( +, -, *, /). ")
+            break;
+        }
+        alert("Rezultat je: " + operacija);
+    </script>
+</body>
+</html>
